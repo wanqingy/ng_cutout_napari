@@ -12,8 +12,7 @@ dependencies = [
     "seaborn",
     "scikit-learn",
     "ipykernel",
-    "napari[all]",
-    "ac-segmentation @ git+https://github.com/AllenInstitute/ac_segmentation.git"
+    "napari[all]"
 ]
 authors = [
     { name = "Wan-Qing Yu", email = "wanqing.yu@alleninstitute.org" },
