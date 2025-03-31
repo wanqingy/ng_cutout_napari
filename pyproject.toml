@@ -1,0 +1,30 @@
+[project]
+name = "ng_cutout_napari"
+version = "0.0.0"
+description = "define bbox of a cutout region in Neuroglancer, and view the cutout in napari"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "ipykernel",
+    "caveclient"
+]
+authors = [
+    { name = "Wan-Qing Yu", email = "wanqing.yu@alleninstitute.org" },
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+]
+
+[tool.ruff]
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select=["E9","F63","F7","F82"]
